@@ -24,6 +24,7 @@ namespace Software
             {
                 btnHome.BackColor = Color.Empty;
                 btnList.BackColor = Color.LightGray;
+                btnAddProduct.BackColor = Color.Empty;
 
                 ListProducts Frm = new ListProducts();
                 Frm.TopLevel = false;
@@ -32,6 +33,7 @@ namespace Software
 
                 isListCreated = true;
                 isHomeCreated = false; // Reset MainMenu flag
+                isAddProductCreated = false;
             }
         }
 
@@ -44,6 +46,7 @@ namespace Software
             {
                 btnHome.BackColor = Color.LightGray;
                 btnList.BackColor = Color.Empty;
+                btnAddProduct.BackColor = Color.Empty;
 
                 MainMenu Frm = new MainMenu();
                 Frm.TopLevel = false;
@@ -52,6 +55,7 @@ namespace Software
 
                 isHomeCreated = true;
                 isListCreated = false; // Reset ListProducts flag
+                isAddProductCreated = false;
             }
         }
 

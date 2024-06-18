@@ -30,7 +30,7 @@ namespace Software
             else
             {
                 btnSend.Text = "Agregar";
-                button1.Visible = false;
+                btnExit.Visible = false;
             }
         }
         private async void loadProducts()
