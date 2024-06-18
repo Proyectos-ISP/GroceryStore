@@ -1,5 +1,7 @@
 ## LOGO
-<center>![logo](https://github.com/Proyectos-ISP/GroceryStore/assets/96152580/788cbfef-667b-42ba-8d51-a107b1abf43f)</center>
+<p align="center">
+  ![logo](https://github.com/Proyectos-ISP/GroceryStore/assets/96152580/788cbfef-667b-42ba-8d51-a107b1abf43f)
+</p>
 
 ## Home
 ![image](https://github.com/Proyectos-ISP/GroceryStore/assets/96152580/a44688e5-183d-4a82-974a-0e023356c4ca)
