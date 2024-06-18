@@ -28,20 +28,212 @@
         /// </summary>
         private void InitializeComponent()
         {
+            txtName = new TextBox();
+            txtCategory = new TextBox();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            txtDescription = new TextBox();
+            label4 = new Label();
+            label5 = new Label();
+            btnSend = new Button();
+            txtQuantity = new NumericUpDown();
+            txtPrice = new NumericUpDown();
+            button1 = new Button();
+            ((System.ComponentModel.ISupportInitialize)txtQuantity).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtPrice).BeginInit();
             SuspendLayout();
+            // 
+            // txtName
+            // 
+            txtName.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            txtName.BackColor = SystemColors.InactiveCaption;
+            txtName.BorderStyle = BorderStyle.None;
+            txtName.Cursor = Cursors.Hand;
+            txtName.Font = new Font("Poppins", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtName.Location = new Point(72, 76);
+            txtName.Name = "txtName";
+            txtName.PlaceholderText = "Name of the product";
+            txtName.RightToLeft = RightToLeft.No;
+            txtName.Size = new Size(221, 20);
+            txtName.TabIndex = 0;
+            // 
+            // txtCategory
+            // 
+            txtCategory.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            txtCategory.BackColor = SystemColors.InactiveCaption;
+            txtCategory.BorderStyle = BorderStyle.None;
+            txtCategory.Cursor = Cursors.Hand;
+            txtCategory.Font = new Font("Poppins", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtCategory.Location = new Point(72, 144);
+            txtCategory.Name = "txtCategory";
+            txtCategory.PlaceholderText = "Category";
+            txtCategory.RightToLeft = RightToLeft.No;
+            txtCategory.Size = new Size(221, 20);
+            txtCategory.TabIndex = 1;
+            // 
+            // label1
+            // 
+            label1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label1.AutoSize = true;
+            label1.Location = new Point(72, 45);
+            label1.Name = "label1";
+            label1.Size = new Size(39, 15);
+            label1.TabIndex = 5;
+            label1.Text = "Name";
+            // 
+            // label2
+            // 
+            label2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label2.AutoSize = true;
+            label2.Location = new Point(72, 112);
+            label2.Name = "label2";
+            label2.Size = new Size(55, 15);
+            label2.TabIndex = 6;
+            label2.Text = "Category";
+            // 
+            // label3
+            // 
+            label3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label3.AutoSize = true;
+            label3.Location = new Point(72, 177);
+            label3.Name = "label3";
+            label3.Size = new Size(67, 15);
+            label3.TabIndex = 8;
+            label3.Text = "Description";
+            // 
+            // txtDescription
+            // 
+            txtDescription.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            txtDescription.BackColor = SystemColors.InactiveCaption;
+            txtDescription.BorderStyle = BorderStyle.None;
+            txtDescription.Cursor = Cursors.Hand;
+            txtDescription.Font = new Font("Poppins", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtDescription.Location = new Point(72, 206);
+            txtDescription.Name = "txtDescription";
+            txtDescription.PlaceholderText = "Description about the product.";
+            txtDescription.RightToLeft = RightToLeft.No;
+            txtDescription.Size = new Size(221, 20);
+            txtDescription.TabIndex = 7;
+            // 
+            // label4
+            // 
+            label4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label4.AutoSize = true;
+            label4.Location = new Point(72, 245);
+            label4.Name = "label4";
+            label4.Size = new Size(53, 15);
+            label4.TabIndex = 10;
+            label4.Text = "Quantity";
+            // 
+            // label5
+            // 
+            label5.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label5.AutoSize = true;
+            label5.Location = new Point(72, 321);
+            label5.Name = "label5";
+            label5.Size = new Size(33, 15);
+            label5.TabIndex = 12;
+            label5.Text = "Price";
+            // 
+            // btnSend
+            // 
+            btnSend.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            btnSend.BackColor = Color.LimeGreen;
+            btnSend.FlatStyle = FlatStyle.Flat;
+            btnSend.Font = new Font("Poppins", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnSend.ForeColor = SystemColors.ButtonHighlight;
+            btnSend.Location = new Point(135, 409);
+            btnSend.Name = "btnSend";
+            btnSend.Size = new Size(84, 33);
+            btnSend.TabIndex = 13;
+            btnSend.Text = "Editar";
+            btnSend.UseVisualStyleBackColor = false;
+            btnSend.Click += btnSend_Click;
+            // 
+            // txtQuantity
+            // 
+            txtQuantity.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            txtQuantity.BackColor = SystemColors.InactiveCaption;
+            txtQuantity.BorderStyle = BorderStyle.None;
+            txtQuantity.Cursor = Cursors.Hand;
+            txtQuantity.Font = new Font("Poppins", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtQuantity.InterceptArrowKeys = false;
+            txtQuantity.Location = new Point(72, 279);
+            txtQuantity.Name = "txtQuantity";
+            txtQuantity.Size = new Size(221, 26);
+            txtQuantity.TabIndex = 14;
+            // 
+            // txtPrice
+            // 
+            txtPrice.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            txtPrice.BackColor = SystemColors.InactiveCaption;
+            txtPrice.BorderStyle = BorderStyle.None;
+            txtPrice.Cursor = Cursors.Hand;
+            txtPrice.DecimalPlaces = 2;
+            txtPrice.Font = new Font("Poppins", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtPrice.InterceptArrowKeys = false;
+            txtPrice.Location = new Point(72, 348);
+            txtPrice.Name = "txtPrice";
+            txtPrice.Size = new Size(221, 26);
+            txtPrice.TabIndex = 15;
+            txtPrice.ThousandsSeparator = true;
+            // 
+            // button1
+            // 
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Poppins", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.Location = new Point(407, -1);
+            button1.Name = "button1";
+            button1.Size = new Size(23, 31);
+            button1.TabIndex = 16;
+            button1.Text = "x";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // addEdit
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = SystemColors.ButtonFace;
+            ClientSize = new Size(430, 510);
+            Controls.Add(button1);
+            Controls.Add(txtPrice);
+            Controls.Add(txtQuantity);
+            Controls.Add(btnSend);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(txtDescription);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(txtCategory);
+            Controls.Add(txtName);
             FormBorderStyle = FormBorderStyle.None;
             Name = "addEdit";
+            ShowIcon = false;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "addEdit";
+            ((System.ComponentModel.ISupportInitialize)txtQuantity).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtPrice).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private TextBox txtName;
+        private TextBox txtCategory;
+        private Label label1;
+        private Label label2;
+        private Label label3;
+        private TextBox txtDescription;
+        private Label label4;
+        private Label label5;
+        private Button btnSend;
+        private NumericUpDown txtQuantity;
+        private NumericUpDown txtPrice;
+        private Button button1;
     }
 }

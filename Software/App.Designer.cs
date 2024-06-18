@@ -32,7 +32,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(App));
             panel2 = new Panel();
-            button1 = new Button();
+            btnAddProduct = new Button();
             btnList = new Button();
             btnHome = new Button();
             pictureBox1 = new PictureBox();
@@ -45,7 +45,7 @@
             // 
             panel2.AutoSize = true;
             panel2.BackColor = Color.AliceBlue;
-            panel2.Controls.Add(button1);
+            panel2.Controls.Add(btnAddProduct);
             panel2.Controls.Add(btnList);
             panel2.Controls.Add(btnHome);
             panel2.Controls.Add(pictureBox1);
@@ -56,23 +56,24 @@
             panel2.Size = new Size(198, 780);
             panel2.TabIndex = 1;
             // 
-            // button1
+            // btnAddProduct
             // 
-            button1.BackColor = SystemColors.InactiveBorder;
-            button1.BackgroundImageLayout = ImageLayout.Zoom;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.ForeColor = SystemColors.ActiveCaptionText;
-            button1.Image = Properties.Resources.Add;
-            button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(0, 217);
-            button1.Name = "button1";
-            button1.RightToLeft = RightToLeft.No;
-            button1.Size = new Size(195, 43);
-            button1.TabIndex = 3;
-            button1.Text = "Add Product";
-            button1.TextAlign = ContentAlignment.MiddleRight;
-            button1.UseVisualStyleBackColor = false;
+            btnAddProduct.BackColor = SystemColors.InactiveBorder;
+            btnAddProduct.BackgroundImageLayout = ImageLayout.Zoom;
+            btnAddProduct.FlatAppearance.BorderSize = 0;
+            btnAddProduct.FlatStyle = FlatStyle.Flat;
+            btnAddProduct.ForeColor = SystemColors.ActiveCaptionText;
+            btnAddProduct.Image = Properties.Resources.Add;
+            btnAddProduct.ImageAlign = ContentAlignment.MiddleLeft;
+            btnAddProduct.Location = new Point(0, 217);
+            btnAddProduct.Name = "btnAddProduct";
+            btnAddProduct.RightToLeft = RightToLeft.No;
+            btnAddProduct.Size = new Size(195, 43);
+            btnAddProduct.TabIndex = 3;
+            btnAddProduct.Text = "Add Product";
+            btnAddProduct.TextAlign = ContentAlignment.MiddleRight;
+            btnAddProduct.UseVisualStyleBackColor = false;
+            btnAddProduct.Click += btnAddProduct_Click;
             // 
             // btnList
             // 
@@ -156,6 +157,6 @@
         private Button btnHome;
         private Panel infoPanel;
         private Button btnList;
-        private Button button1;
+        private Button btnAddProduct;
     }
 }

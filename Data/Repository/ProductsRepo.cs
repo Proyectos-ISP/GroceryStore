@@ -33,15 +33,15 @@ namespace Data.Repository
             return products;
         }
 
-        public async Task<Product?> add(string Name, string Description, string Category, int Quantity, float Price)
+        public async Task<Product?> add(string Name, string Category, string Description, int Quantity, float Price)
         {
 
             // Create a new product based in the arguments
             Product product = new Product()
             {
                 Name = Name,
-                Description = Description,
                 Category = Category,
+                Description = Description,
                 Quantity = Quantity,
                 Price = Price
             };
@@ -62,13 +62,13 @@ namespace Data.Repository
             return newProduct;
         }
 
-        public async Task<Product?> Update(string Id,string Name, string Description, string Category, int Quantity, float Price)
+        public async Task<Product?> Update(string Id,string Name, string Category, string Description, int Quantity, float Price)
         {
             Product product = new Product()
             {
                 Name = Name,
-                Description = Description,
                 Category = Category,
+                Description = Description,
                 Quantity = Quantity,
                 Price = Price
             };

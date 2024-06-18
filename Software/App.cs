@@ -13,6 +13,7 @@ namespace Software
 
         bool isListCreated = false;
         bool isHomeCreated = false;
+        bool isAddProductCreated = false;
 
         private void btnList_Click(object sender, EventArgs e)
         {
@@ -65,6 +66,29 @@ namespace Software
                     currentForm.Close(); // Close the form
                 }
             }
+        }
+
+        private void btnAddProduct_Click(object sender, EventArgs e)
+        {
+            // Close any existing form in the panel
+            CloseCurrentForm();
+
+            if (!isAddProductCreated)
+            {
+                btnHome.BackColor = Color.Empty;
+                btnList.BackColor = Color.Empty;
+                btnAddProduct.BackColor = Color.LightGray;
+
+                addEdit Frm = new addEdit(null);
+                Frm.TopLevel = false;
+                infoPanel.Controls.Add(Frm);
+                Frm.Show();
+
+                isAddProductCreated = true;
+                isListCreated = false; // Reset ListProducts flag
+                isHomeCreated = false;
+            }
+
         }
     }
 }

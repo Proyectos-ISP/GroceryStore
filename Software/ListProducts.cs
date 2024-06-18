@@ -30,7 +30,7 @@ namespace Software
         {
             string? idProduct = (string)dataProductsView.CurrentRow.Cells[0].Value;
 
-            addEdit addEditView = new addEdit();
+            addEdit addEditView = new addEdit(idProduct);
             addEditView.TopLevel = true;
             addEditView.ShowDialog();
 
